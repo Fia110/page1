@@ -1,0 +1,60 @@
+*{
+    font-family: 'verdana';
+}
+body{
+    margin: 0;
+}
+/*---------Encabezado--------*/
+.encabezado{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.encabezado img{
+    max-height: 50px;
+}
+.encabezado h1{
+    margin: 0;
+}
+/*Anidar*/
+.contenedor-menu-carrito{
+    display: flex;
+    align-items: center;
+}
+.encabezado{
+    & button{
+ 
+        background-color: black;
+        color: white;
+        padding: 10px;
+        font-size: 20px;
+    }
+}
+.contenedor-menu{
+    & button:hover{
+        background-color: white;
+        color: black;
+    }
+}
+/* Contenedor*/
+.contenedor-titulo{
+    text-align: center;
+    margin: 1% 0;
+}
+
+.contenedor-tarjetas{
+    display: flex;/*Hace que los objetos se coloquen en la misma linea */
+    justify-content: center;/*centrar los objetos segun el contenido*/
+    flex-wrap: wrap;/*Permite aglomerar más objetos*/
+}
+.tarjetas{
+    text-align: center;
+    & img{
+        width: 250px;
+        height: 190px;
+    }
+}
+.tarjetas:hover{
+    transform: scale(1.5,1.1);/*direcciones a X & Y*/
+    background-color: white;
+}
